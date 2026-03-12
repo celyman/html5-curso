@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Función Area de un cuadrado en JavaScript</title>
+  </head>
+  <body>
+    <header>
+      <h1>Documentación básica de una función JavaScript</h1>
+    </header>
+    <main>
+      <article>
+        <section>
+          <header>
+            <h2>Función calcularAreaCuadrado</h2>
+          </header>
+          <h3>¿Qué hace esta función?</h3>
+          <p>
+            <dfn id="def-calcular-area">calcularAreaCuadrado</dfn>
+            Esta función recibe un número que representa el lado de un cuadrado
+            y devuelve su área
+          </p>
+          <p>La idea es muy simple</p>
+          <p>
+            área = lado * lado o también puedes escribir como<strong>
+              <var> A=L<sup>2</sup> </var></strong
+            >
+          </p>
+        </section>
+        <section>
+          <h2>Donde</h2>
+          <dl>
+            <dt><var>A</var></dt>
+            <dd>Área del cuadrado</dd>
+
+            <dt><var>L</var></dt>
+            <dd>Longitud del lado</dd>
+
+            <dt>
+              <var>L<sup>2</sup></var>
+            </dt>
+            <dd>El lado multiplicado por sí mismo</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Código de la función</h2>
+          <pre><code class="language-javascript">
+            function calcularAreaCuadrado(lado) { 
+              let area = lado * lado; 
+              return area; 
+            }
+          </code></pre>
+        </section>
+        <section>
+          <h2>Explicación línea por línea</h2>
+          <h3>1. Declaración de la función</h3>
+          <code> function calcularAreaCuadrado(lado) </code>
+          <section
+            aria-label="Aquí estamos creando una función llamada calcularAreaCuadrado"
+          >
+            <h4>
+              Aquí estamos creando una función llamada calcularAreaCuadrado
+            </h4>
+            <ul>
+              <li>
+                <code>function</code> es la palabra que JavaScript usa para
+                crear funciones
+              </li>
+              <li>
+                <code>calcularAreaCuadrado</code> es el nombre de la función
+              </li>
+              <li><code>lado</code> es el dato de entrada</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h2>2.Variable matemática sencilla</h2>
+          <code> let area = lado * lado; </code>
+          <section aria-label="Aquí se crea una variable llamada area">
+            <h3>Aquí se crea una variable llamada <code>area</code></h3>
+            <ul>
+              <li><code>let</code> sirve para guardar un valor</li>
+              <li>
+                <code>lado * lado</code> significa multiplicar un lado por sí
+                mismo
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h2>3. Resultado de salida</h2>
+          <section aria-label="return area;">
+            <ul>
+              <li><code> return area; </code></li>
+              <li>
+                <code>return</code>
+                <p>significa que la función entrega el resultado final</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <header>
+            <h2>Como invocarla desde la terminal</h2>
+          </header>
+          <p>
+            Para ejecutar esta función, puedes usar
+            <abbr
+              title="Entorno de ejecución de JavaScript del lado del servidor"
+              >Node.js</abbr
+            >.
+          </p>
+          <section aria-label="1. Crea un archivo">
+            <ul>
+              <li>
+                <p>1. Crea un archivo</p>
+                <p>
+                  Guarda este código en un archivo llamado <code>area.js</code>
+                </p>
+              </li>
+              <pre><code class="language-javascript">
+                function calcularAreaCuadrado(lado) { 
+                  let area = lado * lado; 
+                  return area; 
+                } 
+                
+                let resultado = calcularAreaCuadrado(5);
+                console.log("El área del cuadrado es:", resultado);
+              </code></pre>
+              <li><p>2. Abre la terminal</p></li>
+              <p>Ubícate en la carpeta donde guardaste el archivo</p>
+              <li>
+                <p>
+                  3. Abre la terminal presionando las teclas
+                  <kbd>Windows + ñ</kbd> y luego ejecutas el archivo
+                </p>
+              </li>
+              <pre><code class="language-bash"> node area.js </code></pre>
+              <li><p>4. Salida en terminal</p></li>
+              <samp>El área del cuadrado es 25</samp>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <address>
+        Escrito por <strong>CelyDev</strong><sup>&reg;</sup>. Puedes contactarme
+        en
+        <a href="https://github.com/celyman">GitHub</a>
+      </address>
+    </footer>
+  </body>
+</html>
